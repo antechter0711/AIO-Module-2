@@ -24,6 +24,10 @@ plt.show()
 
 
 
+"""Câu hỏi 12: Hoàn thành đoạn code sau đây để chuyển ảnh màu sang ảnh xám dựa vào
+phương pháp Lightness:
+"""
+
 import matplotlib.pyplot as plt
 import numpy as np
 import cv2
@@ -36,7 +40,9 @@ img = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 gray_image_01 = np.apply_along_axis(color2grayscale, axis=2, arr=img)
 gray_image_01 [0, 0]
 
-
+"""Câu hỏi 13: Hoàn thành đoạn code sau đây để chuyển ảnh màu sang ảnh xám dựa vào
+phương pháp Average:
+"""
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -48,6 +54,10 @@ image = cv2.imread("/content/dog.jpeg")
 img = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 gray_image_02 = np.apply_along_axis(color2grayscale, axis = 2, arr = img)
 gray_image_02 [0, 0]
+
+"""Câu hỏi 14: Hoàn thành đoạn code sau đây để chuyển ảnh màu sang ảnh xám dựa vào
+phương pháp Luminosity:
+"""
 
 import matplotlib.pyplot as plt
 import numpy as np
